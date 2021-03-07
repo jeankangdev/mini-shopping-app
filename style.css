@@ -1,0 +1,71 @@
+body {
+  background-color: darkslategray;
+}
+
+.container {
+  padding: 20% 10%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+header img {
+  width: 70px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  padding: 0 6px 0 0;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul li img {
+  width: 50px;
+}
+
+[class^="btn"] {
+  width: 70px;
+  height: 40px;
+  margin-bottom: 6px;
+  border: none;
+  border-radius: 6px;
+  color: darkslategray;
+  font-weight: bold;
+}
+
+.btn-blue {
+  background-color: dodgerblue;
+}
+
+.btn-yellow {
+  background-color: khaki;
+}
+
+.btn-pink {
+  background-color: palevioletred;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 6px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.product img {
+  width: 40px;
+}
+
+.product__description {
+  padding: 10px 20px;
+  font-weight: semi-bold;
+}

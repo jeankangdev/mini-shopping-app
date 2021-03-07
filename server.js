@@ -1,14 +1,20 @@
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
-// const exphbs = require('express-handlebars');
+const path = require('path');
 
+// const exphbs = require('express-handlebars');
 // app.engine('.hbs', exphbs({ extname: '.hbs' }));
 // app.set('view engine', '.hbs');
-// app.use(express.static('./views/'));
 
-app.get('/', (req, res) => {
-res.send('Hello World!')
+app.use(express.static('./'));
+
+// app.get('/', (req, res) => {
+  //   res.send('word');
+  // });
+
+app.get('/', function(req, res) {
+  res.sendFile(path.join(__dirname + '/index.html'));
 });
 
 app.listen(port, () => {
