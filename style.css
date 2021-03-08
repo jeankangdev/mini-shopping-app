@@ -1,19 +1,41 @@
-body {
-  background-color: darkslategray;
+:root {
+  /* color */
+  --color-grey: darkslategrey;
+  --color-blue: dodgerblue;
+  --color-yellow: khaki;
+  --color-pink: palevioletred;
+
+  /* size */
+  --width-button: 70px;
+  --height-button: 40px;
+  --width-product: 40px;
+
+  /* animation */
+  --animation-duration: 300ms;
 }
 
-.container {
-  padding: 20% 10%;
+body {
+  background-color: var(--color-grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header {
   display: flex;
   justify-content: center;
+  transition: transform var(--animation-duration) ease;
+}
+
+header:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 header img {
-  width: 70px;
+  width: var(--width-button);
 }
+
 nav ul {
   display: flex;
   justify-content: space-around;
@@ -24,32 +46,39 @@ nav ul {
 
 nav ul li {
   list-style-type: none;
+  padding: 6px;
+  cursor: pointer;
+  transition: transform var(--animation-duration) ease;
+}
+
+nav ul li:hover {
+  transform: scale(1.1);
 }
 
 nav ul li img {
-  width: 50px;
+  width: var(--width-product);
 }
 
 [class^="btn"] {
-  width: 70px;
-  height: 40px;
+  width: var(--width-button);
+  height: var(--height-button);
   margin-bottom: 6px;
   border: none;
   border-radius: 6px;
-  color: darkslategray;
+  color: var(--color-grey);
   font-weight: bold;
 }
 
 .btn-blue {
-  background-color: dodgerblue;
+  background-color: var(--color-blue);
 }
 
 .btn-yellow {
-  background-color: khaki;
+  background-color: var(--color-yellow);
 }
 
 .btn-pink {
-  background-color: palevioletred;
+  background-color: var(--color--pink);
 }
 
 .product {
@@ -67,5 +96,4 @@ nav ul li img {
 
 .product__description {
   padding: 10px 20px;
-  font-weight: semi-bold;
 }
