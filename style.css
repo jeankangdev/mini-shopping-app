@@ -6,9 +6,12 @@
   --color-pink: palevioletred;
 
   /* size */
-  --width-button: 70px;
+  --base-space: 8px;
+  --button-font-size: 16px;
+  --width-button: 50px;
   --height-button: 40px;
-  --width-product: 40px;
+  --size-thumbnail: 40px;
+  --size-border: 4px;
 
   /* animation */
   --animation-duration: 300ms;
@@ -40,14 +43,15 @@ nav ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 0;
   margin: auto;
-  padding: 0 6px 0 0;
 }
 
 nav ul li {
   list-style-type: none;
-  padding: 6px;
+  margin-right: var(--base-space);
   cursor: pointer;
+  border: 0;
   transition: transform var(--animation-duration) ease;
 }
 
@@ -56,44 +60,49 @@ nav ul li:hover {
 }
 
 nav ul li img {
-  width: var(--width-product);
+  width: var(--width-button);
 }
 
-[class^="btn"] {
-  width: var(--width-button);
+.btn {
+  font-size: var(--button-font-size);
+  width: calc(var(--width-button) * 1.5);
   height: var(--height-button);
-  margin-bottom: 6px;
   border: none;
-  border-radius: 6px;
+  border-radius: var(--size-border);
   color: var(--color-grey);
   font-weight: bold;
+  outline: none;
 }
 
-.btn-blue {
+.blue {
   background-color: var(--color-blue);
 }
 
-.btn-yellow {
+.yellow {
   background-color: var(--color-yellow);
 }
 
-.btn-pink {
-  background-color: var(--color--pink);
+.pink {
+  background-color: var(--color-pink);
+}
+
+.products {
+  overflow-y: scroll;
 }
 
 .product {
   display: flex;
   align-items: center;
   background-color: white;
-  border-radius: 6px;
-  padding: 10px;
-  margin: 10px;
+  border-radius: var(--size-border);
+  padding: var(--base-space);
+  margin: var(--base-space);
 }
 
 .product img {
-  width: 40px;
+  width: var(--size-thumbnail);
 }
 
 .product__description {
-  padding: 10px 20px;
+  padding: var(--base-space) calc(var(--base-space) * 2);
 }
