@@ -4,16 +4,16 @@
     { 
       "type": "tshirt", 
       "gender": "female",
-    "size": "large",
+      "size": "small",
       "color": "pink",
-      "Image": "../img/pink_t.png"
+      "image": "../imgs/pink_t.png"
       },
       { 
       "type": "tshirt", 
       "gender": "female",
-    "size": "large",
+      "size": "large",
       "color": "pink",
-      "Image": "../img/pink_t.png"
+      "image": "../imgs/pink_t.png"
       }
     ]
 }
