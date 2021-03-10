@@ -5,12 +5,14 @@ function loadItems() {
     .then(json => json.items);
 }
 
+// update the list with the given items
 function displayItems(items) {
   const container = document.querySelector('.products');
   container.innerHTML = items.map(item => createHTMLString(item)).join('');
   console.log(container.innerHTML); // item, item
 }
 
+// create HTML list item from the given data items
 function createHTMLString(item) {
   return `
   <div class="product">
@@ -20,10 +22,34 @@ function createHTMLString(item) {
   `;
 }
 
+function setEventListeners(items) {
+  const logo = document.querySelector('.logo');
+  logo.addEventListener('click', () => {
+    displayItems(items);
+  });
+
+  const btns = document.querySelector('.btns');
+  btns.addEventListener('click', (event) => {
+    onButtonClick(event, items);
+  });
+}
+
+function onButtonClick(event, items) {
+  const dataset = event.target.dataset;
+  const key = dataset.key;
+  const value = dataset.value;
+
+  if(key == null || value == null) {
+    return;
+  }
+  displayItems(items.filter(item => item[key] === value));
+}
+
 // main
 loadItems() // returns Promise if it was successful
   .then(items => {
     displayItems(items);
-    // setEventListeners(items);
+    setEventListeners(items);
   })
   .catch(console.log);
+
