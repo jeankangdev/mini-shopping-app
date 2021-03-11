@@ -1,1 +1,1 @@
-![alt text](https://github.com/yunakang/mini-shopping-app/blob/origin/pink_p.png?raw=true)
+![alt text](./imgs/blue_p.png?raw-true "image")
