@@ -1,5 +1,8 @@
-Screen Shot
+MAIN (all clothes)  
+![alt text](./imgs/main.png?raw-true "image")
 
-![alt text](./imgs/README.png?raw-true "image")
+RESULT (filter by skirts)  
+![alt text](./imgs/filteredBySkirt.png?raw-true "image")
 
-Dynamically
+RESULT (filter by yellow)  
+![alt text](./imgs/filteredByYellow.png?raw-true "image")
