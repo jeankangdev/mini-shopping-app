@@ -1,8 +1,10 @@
-## 📝 PROJECT
+## 📑 PROJECT
 
-Mini shopping mall
+Mini shopping app to practice vanilla JavaScript(fetch, filter)
 
 ---
+
+## 📎 PLAN
 
 #### STACK
 
@@ -10,20 +12,10 @@ Mini shopping mall
 
 #### FEATURE
 
-- [x] Filter Feature
+- [x] filter Feature (filter by tshirt, pants, skirts, yellow, pink, blue)
 
-MAIN (all clothes)
+<img src="./imgs/README.png?raw-true">
 
-<!-- ![main](./imgs/main.png?raw-true "image")
- -->
-<img src="./imgs/main.png?raw-true" width="200">
+---
 
-RESULT (filter by skirts)
-
-<!-- ![filter by skirt](./imgs/filteredBySkirt.png?raw-true "image") -->
-<img src="./imgs/filteredBySkirt.png?raw-true" width="200">
-
-RESULT (filter by yellow)
-
-<!-- ![filter by yellow](./imgs/filteredByYellow.png?raw-true "image") -->
-<img src="./imgs/filteredByYellow.png?raw-true" width="200">
+<!-- ## 💡 PROBLEM SOLVING HISTORY -->
